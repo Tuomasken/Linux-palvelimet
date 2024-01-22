@@ -9,7 +9,7 @@ Vapaa ohjelmisto viittaa ohjelmistoon, mikä antaa käyttäjälleen vapaat käde
  - Vapaus jakaa ohjelmistoa muille.
  - Vapaus jakaa itse muokkaamaansa versiota ohjelmistosta muille.
 
-Vapaa ohjelmisto ei sulje pois taloudellisen hyödyn saamista kyseisellä ohjelmistolla tai siitä johdetuilla tuotteilla. Taloudellinen hyöty ei ole määrittelevä tekijä suuntaan taikka toiseen kun puhutaan siitä mikä on vapaa ohjelmisto ja mikä ei.
+Vapaa ohjelmisto ei sulje pois taloudellisen hyödyn saamista kyseisellä ohjelmistolla tai siitä johdetuilla tuotteilla, eli vapaa ohjelmisto =/= ilmaisohjelma. Taloudellinen hyöty ei ole määrittelevä tekijä suuntaan taikka toiseen kun puhutaan siitä mikä on vapaa ohjelmisto ja mikä ei.
 
 
 ## Debianin asennus virtuaalikoneeseen
@@ -29,5 +29,9 @@ Käynnistäessä näin luotua virtuaalikonetta kohtasin kuitenkin seuraavanlaise
 
 Korjasin ongelman seuraavin askelin: 1) käynnistin isäntäkoneen uudelleen ja menin BIOS-asetuksiin. 2) Sieltä etsin järjestelmä asetukset -lehdeltä kohdan "Enable VTx" ja aktivoin sen. 3) Käynnistin koneen normaalisti. 
 Ongelma oli siis, että virtuaaliympäristöjä ei ollut lähtökohtaisesti sallittu koneeni asetuksissa ja näillä toimilla kävin manuaalisesti sallimassa ne. 
+
+Tämän jälkeen yritin uudelleen käynnistää virtuaalikoneen, joka onnistui tällä kertaa ongelmitta.
+
+![DebianToimii](DebianAsennus/DebianToimii2.png)
 
 
