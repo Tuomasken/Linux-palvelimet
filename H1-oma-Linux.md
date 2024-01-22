@@ -15,5 +15,7 @@ Vapaa ohjelmisto ei sulje pois taloudellisen hyödyn saamista kyseisellä ohjelm
 ## Debianin asennus virtuaalikoneeseen
 
 Aluksi latasin VirtualBox-ohjelmiston työkoneelleni (windows 11)
-![VBox-lataus](
+![VBox-lataus](DebianAsennus/Vbox_lataus.png)
+
+
 
