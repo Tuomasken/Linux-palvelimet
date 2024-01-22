@@ -20,7 +20,7 @@ Aluksi latasin VirtualBox-ohjelmiston työkoneelleni (windows 11)
 
 Onnistuneen VirtualBox-ohjelmiston asentamisen jälkeen loin virtuaalikoneen, johon mounttasin Debianin (versio  debian-live-12.4.0-amd64-xfce).
 
-![DebianAsennus](DebianAsennus.png)
+![DebianAsennus](DebianAsennus/DebianAsennus.png)
 
 
 
