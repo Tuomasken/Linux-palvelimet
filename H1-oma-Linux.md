@@ -18,9 +18,16 @@ Aluksi latasin VirtualBox-ohjelmiston työkoneelleni (windows 11)
 
 ![VBox-lataus](DebianAsennus/Vbox_lataus.png)
 
-Onnistuneen VirtualBox-ohjelmiston asentamisen jälkeen loin virtuaalikoneen, johon mounttasin Debianin (versio  debian-live-12.4.0-amd64-xfce).
+Onnistuneen VirtualBox-ohjelmiston asentamisen jälkeen loin virtuaalikoneen, johon mounttasin Debianin (versio debian-live-12.4.0-amd64-xfce).
 
 ![DebianAsennus](DebianAsennus/DebianAsennus.png)
 
+
+Käynnistäessä näin luotua virtuaalikonetta kohtasin kuitenkin seuraavanlaisen virheilmoituksen:
+
+![VTxError](DebianAsennus/Error1.png)
+
+Korjasin ongelman seuraavin askelin: 1) käynnistin isäntäkoneen uudelleen ja menin BIOS-asetuksiin. 2) Sieltä etsin järjestelmä asetukset -lehdeltä kohdan "Enable VTx" ja aktivoin sen. 3) Käynnistin koneen normaalisti. 
+Ongelma oli siis, että virtuaaliympäristöjä ei ollut lähtökohtaisesti sallittu koneeni asetuksissa ja näillä toimilla kävin manuaalisesti sallimassa ne. 
 
 
