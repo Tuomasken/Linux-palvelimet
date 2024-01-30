@@ -39,6 +39,22 @@ Valitsin testattaviksi ohjelmiksi Searchmonkey ja Gitit nimiset paketit. Lisäks
 
 ![Pakettien_asennus](H2Kuvat/3asennus)
 
+Seuraavaksi testasin asennetut ohjelmat:
+
+*Searchmonkey*
+Kyseessä hieman graafisempi versio komentorivin hakutoiminnosta. Testattu hakemalla yksinkertaisella hakusanalla. Löysi kaikki tiedostot joissa oli nimessä kyseinen sana.
+![Searchmonkey](H2Kuvat/Searchmonkey)
+
+*Gitit*
+Wikiohjelma, eli yksinkertaisesti tietopankki.
+![Gitit](H2Kuvat/Gitit)
+
+*Nethack*
+Merkkigrafiikalla toteutettu roolipeli.
+![Nethack](H2Kuvat/Nethack)
+
+
+
 
   
 
