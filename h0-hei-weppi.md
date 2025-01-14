@@ -10,4 +10,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales erat quis
 
 ![PepeHakkeri](https://i.imgur.com/zabyPE5.jpeg)
 
+## Viittaukset
 
+Karvinen, 2023. "Create a web page using Github". Viitattu 14.01.2025. https://terokarvinen.com/2023/create-a-web-page-using-github/ 
