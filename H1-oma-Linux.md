@@ -14,9 +14,9 @@ Vapaa ohjelmisto ei sulje pois taloudellisen hyödyn saamista kyseisellä ohjelm
 
 ## Debianin asennus virtuaalikoneeseen
 
-Aluksi latasin VirtualBox-ohjelmiston työkoneelleni (windows 11)
+Aluksi latasin VirtualBox-ohjelmiston koneelleni osoitteesta https://www.virtualbox.org/wiki/Downloads. Tiedostotyypin valitsin kohdasta "Windows Hosts" ja versio oli VirtualBox-7.1.4-165100-Win.
+Yrittäessäni asentaa Virtualbox-ohjelmaa sain kuitenkin virheilmoituksen (kuva 1). Korjasin ongelman lataamalla uusimman Microsoft Visual C++ Redistributable Version osoitteesta https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170. Asennetun kirjaston versio oli Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34433.
 
-![VBox-lataus](DebianAsennus/Vbox_lataus.png)
 
 Onnistuneen VirtualBox-ohjelmiston asentamisen jälkeen loin virtuaalikoneen, johon mounttasin Debianin (versio debian-live-12.4.0-amd64-xfce).
 
