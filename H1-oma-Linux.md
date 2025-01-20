@@ -30,7 +30,7 @@ Käynnistäessä näin luotua virtuaalikonetta kohtasin kuitenkin seuraavanlaise
 Korjasin ongelman seuraavin askelin: 1) käynnistin isäntäkoneen uudelleen ja menin BIOS-asetuksiin. 2) Sieltä etsin järjestelmä asetukset -lehdeltä kohdan "Enable VMS" ja aktivoin sen. 3) Käynnistin koneen normaalisti. 
 Ongelma oli siis, että virtuaaliympäristöjä ei ollut lähtökohtaisesti sallittu koneeni asetuksissa ja näillä toimilla kävin manuaalisesti sallimassa ne. 
 
-Tämän jälkeen yritin uudelleen käynnistää virtuaalikoneen, joka onnistui tällä kertaa ongelmitta. Tämän jälkeen suoritin Debianin asennusohjelman, jossa tuli kuitenkin ongelma debianin version yhteensopivuuden kanssa. Tämän korjasin käymällä manuaalisesti Virtualboxissa virtuaalikoneen asetuksissa vaihtamassa käytetyn version.  
+Tämän jälkeen yritin uudelleen käynnistää virtuaalikoneen, joka onnistui tällä kertaa ongelmitta. Tämän jälkeen suoritin Debianin asennusohjelman, jossa tuli kuitenkin ongelma debianin version yhteensopivuuden kanssa. Tämän korjasin käymällä manuaalisesti Virtualboxissa virtuaalikoneen asetuksissa vaihtamassa käytetyn version 32-bittisestä 64-bittiseen.  
 
 ![VersionKorjaus](H1/Virhe3_korjaus.png)
 
