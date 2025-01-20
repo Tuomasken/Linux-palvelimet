@@ -20,18 +20,20 @@ Yrittäessäni asentaa Virtualbox-ohjelmaa sain kuitenkin virheilmoituksen (kuva
 
 Onnistuneen VirtualBox-ohjelmiston asentamisen jälkeen loin virtuaalikoneen, johon mounttasin Debianin (versio debian-live-12.9.0-amd64-xfce, jonka latasin osoitteesta https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/ ). Asennuksessa käytin Tero Karvisen 2021, Debianin asennusohjeita (https://terokarvinen.com/2021/install-debian-on-virtualbox/ ).
 
-![DebianAsennus](DebianAsennus/DebianAsennus.png)
+![DebianAsennus](H1/Virtuaalikoneen_luonti.png)
 
 
 Käynnistäessä näin luotua virtuaalikonetta kohtasin kuitenkin seuraavanlaisen virheilmoituksen:
 
-![VTxError](DebianAsennus/Error1.png)
+![VMS_Error](H1/Virheilmoitus2.png)
 
-Korjasin ongelman seuraavin askelin: 1) käynnistin isäntäkoneen uudelleen ja menin BIOS-asetuksiin. 2) Sieltä etsin järjestelmä asetukset -lehdeltä kohdan "Enable VTx" ja aktivoin sen. 3) Käynnistin koneen normaalisti. 
+Korjasin ongelman seuraavin askelin: 1) käynnistin isäntäkoneen uudelleen ja menin BIOS-asetuksiin. 2) Sieltä etsin järjestelmä asetukset -lehdeltä kohdan "Enable VMS" ja aktivoin sen. 3) Käynnistin koneen normaalisti. 
 Ongelma oli siis, että virtuaaliympäristöjä ei ollut lähtökohtaisesti sallittu koneeni asetuksissa ja näillä toimilla kävin manuaalisesti sallimassa ne. 
 
-Tämän jälkeen yritin uudelleen käynnistää virtuaalikoneen, joka onnistui tällä kertaa ongelmitta. Tämän jälkeen suoritin Debianin asennusohjelman, joka sekin onnistui ongelmitta. Testasin vielä perustoimintoja virtuaalikoneessa ja en kohdannut vajavaisuuksia.
+Tämän jälkeen yritin uudelleen käynnistää virtuaalikoneen, joka onnistui tällä kertaa ongelmitta. Tämän jälkeen suoritin Debianin asennusohjelman, jossa tuli kuitenkin ongelma debianin version yhteensopivuuden kanssa. Tämän korjasin käymällä manuaalisesti Virtualboxissa virtuaalikoneen asetuksissa vaihtamassa käytetyn version.  
 
-![DebianToimii](DebianAsennus/DebianToimii2.png)
+![VersionKorjaus](H1/Virhe3_korjaus.png)
+
+ Testasin vielä perustoimintoja virtuaalikoneessa ja en kohdannut vajavaisuuksia.
 
 
