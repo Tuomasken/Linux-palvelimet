@@ -18,7 +18,7 @@ Aluksi latasin VirtualBox-ohjelmiston koneelleni osoitteesta https://www.virtual
 Yrittäessäni asentaa Virtualbox-ohjelmaa sain kuitenkin virheilmoituksen (kuva 1). Korjasin ongelman lataamalla uusimman Microsoft Visual C++ Redistributable Version osoitteesta https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170. Asennetun kirjaston versio oli Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34433.
 
 
-Onnistuneen VirtualBox-ohjelmiston asentamisen jälkeen loin virtuaalikoneen, johon mounttasin Debianin (versio debian-live-12.4.0-amd64-xfce).
+Onnistuneen VirtualBox-ohjelmiston asentamisen jälkeen loin virtuaalikoneen, johon mounttasin Debianin (versio debian-live-12.9.0-amd64-xfce, jonka latasin osoitteesta https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/ ). Asennuksessa käytin Tero Karvisen 2021, Debianin asennusohjeita (https://terokarvinen.com/2021/install-debian-on-virtualbox/ ).
 
 ![DebianAsennus](DebianAsennus/DebianAsennus.png)
 
