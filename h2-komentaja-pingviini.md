@@ -22,7 +22,7 @@ Uusien komentoriviohjelmien asennus. Aluksi tutustuin tarjontaan komennolla:
 
     $ apt-cache search text user interface
 
-![apt-cache](Kuvat/H2/Apt-cache)
+![apt-cache](H2/Apt-cache)
 
 Listauksesta valitsin ohjelmat "Searchmonkey" ja "pspp". Kolmanneksi ohjelmaksi valitsin pelin Nethack. Asensin nämä ohjelmat komennolla
 
