@@ -95,7 +95,7 @@ Tässä tehtässä asensin list hardware -ohjelman (lshw) ja tarkastelin sen avu
 ![lshw](H2/lshw.png)
 
 
-Luonnollisesti lshw näyttää luodun virtuaalikoneen laitteistoa eli "rautaa". Levyn ja työmuistin koko ovat vastaavat mitä asetettiin konetta luodessa. Prosessori on käytetyn isäntäkoneen. Eli komennon saatiin selville ensisijaisesti se, että 1) työskennellään virtuaalisella koneella 2) osa virtuaalisen koneen asetuksista.
+Luonnollisesti lshw näyttää luodun virtuaalikoneen laitteistoa eli "rautaa". Levyn ja työmuistin koko ovat vastaavat mitä asetettiin konetta luodessa. Prosessori on käytetyn isäntäkoneen. Eli komennolla saatiin selville ensisijaisesti se, että 1) ollaan virtuaalisella koneella 2) osa virtuaalisen koneen asetuksista.
 
 
 
