@@ -30,11 +30,11 @@ Listauksesta valitsin ohjelmat "Searchmonkey" ja "pspp". Kolmanneksi ohjelmaksi 
 
 Seuraavaksi testasin, että jokainen näistä asennetuista ohjelmista toimii.
 
-![Searchmonkey](Kuvat/H2/Searchmonkey)
+![Searchmonkey](H2/Searchmonkey.png)
 
-![pspp](Kuvat/H2/pspp)
+![pspp](H2/pspp.png)
 
-![Nethack](Kuvat/H2/Nethack)
+![Nethack](H2/Nethack.png)
 
 
 ## c)
