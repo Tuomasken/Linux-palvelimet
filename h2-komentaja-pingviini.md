@@ -39,6 +39,20 @@ Seuraavaksi testasin, että jokainen näistä asennetuista ohjelmista toimii.
 
 ## c) 
 
+Aluksi tarkastelin root-hakemistoa:
+
+![Root](H2/Root.png)
+
+
+Tämän jälkeen siirryin Rootin alla olevaan etc hakemistoon, jossa säilötään koneen config-tiedostot. Alla esimerkki Netconfig-tiedostosta:
+
+![Netconfig](H2/Netconfig.png)
+
+
+Seuraavaksi tarkastelin käyttäjähakemistoa, mihin tallennetaan kaikki käyttäjäkohtainen data:
+
+![user](H2/user.png)
+
 ## d)
 
 Grep-komennolla voi myös etsiä rekursiivisesti käyttämällä -r tarkennetta. Tämä etsii kohdetta tämänhetkisestä kansiosta ja kaikista kansioista sen sisällä. Havainnollistaakseni tätä toimintoa luon aluksi H2-kansion käyttäjähakemistooni ja sinne h2testi.md tiedoston, johon kirjoitin sanan "ananaskeitto".
