@@ -22,11 +22,20 @@ Uusien komentoriviohjelmien asennus. Aluksi tutustuin tarjontaan komennolla:
 
     $ apt-cache search text user interface
 
+![apt-cache](Kuvat/H2/Apt-cache)
+
 Listauksesta valitsin ohjelmat "Searchmonkey" ja "pspp". Kolmanneksi ohjelmaksi valitsin pelin Nethack. Asensin nämä ohjelmat komennolla
 
     $ sudo apt-get -y install searchmonkey pspp nethack-console
 
 Seuraavaksi testasin, että jokainen näistä asennetuista ohjelmista toimii.
+
+![Searchmonkey](Kuvat/H2/Searchmonkey)
+
+![pspp](Kuvat/H2/pspp)
+
+![Nethack](Kuvat/H2/Nethack)
+
 
 ## c)
 
