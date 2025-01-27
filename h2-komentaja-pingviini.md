@@ -37,7 +37,7 @@ Seuraavaksi testasin, että jokainen näistä asennetuista ohjelmista toimii.
 ![Nethack](H2/Nethack.png)
 
 
-## c)
+## c) 
 
 ## d)
 
@@ -53,6 +53,7 @@ Seuraavaksi kokeilin löytääkö grep rekursiivisesti sanan "ananaskeitto" kun 
     $ cd /home/tuomaske/
     $ grep -r ananaskeitto .
 
+![rekursiivinenGrep](H2/rekursiivinenGrep.png)
 
 
 Tämän jälkeen testasin grepin laskemistoimintoa. Kävin kirjoittamassa aiemmin luotuun h2testi.md riveille 2-5 sanan "omena", ja sen jälkeen kokeilin osaako grep laskea "omena" sanan esiintymiskerrat kyseisessä tiedostossa.
@@ -60,7 +61,7 @@ Tämän jälkeen testasin grepin laskemistoimintoa. Kävin kirjoittamassa aiemmi
     $ cd /home/tuomaske/H2/
     $ grep -c omena h2testi.md
 
-
+![laskentaGrep](H2/laskentaGrep.png)
 
 
 ## e) 
@@ -70,12 +71,14 @@ Putkilla yhdistetään komennon yhden prosessin tuloste toisen prosessin syötte
     $ cd /home/tuomaske/
     $grep -r ananaskeitto . | less
 
-
+![putki](H2/putki.png)
 
 
 ## f) 
 
 Tässä tehtässä asensin list hardware -ohjelman (lshw) ja tarkastelin sen avulla koneeni "rautaa".
+
+![lshw](H2/lshw.png)
 
 
 Luonnollisesti lshw näyttää luodun virtuaalikoneen laitteistoa eli "rautaa". Levyn ja työmuistin koko ovat vastaavat mitä asetettiin konetta luodessa. Prosessori on käytetyn isäntäkoneen. Eli komennon saatiin selville ensisijaisesti se, että 1) työskennellään virtuaalisella koneella 2) osa virtuaalisen koneen asetuksista.
