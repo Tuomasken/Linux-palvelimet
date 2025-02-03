@@ -38,7 +38,7 @@ Tällä tulosteella osiot tarkoittavat seuraavaa:
 
 ## c)
 
-Lähdin tekemään uutta aloitussivua komennolla
+Lähdin tekemään uutta aloitussivua seuraavalla komennolla. Käytetyt asetukset sain osoitteesta https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
 
     $ sudoedit /etc/apache2/sites-available/hattu.example.com.conf
 
