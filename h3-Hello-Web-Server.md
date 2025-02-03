@@ -1,5 +1,20 @@
 # H3 Hello Web Server
 
+
+## Harjoituksessa käytetyn koneen parametrejä
+
+Kannettavan tietokoneen malli: HP Elitebook 840 G4
+Käyttöjärjestelmä: Windows 10 Pro, versio 22H2
+Prosessori: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz 2.71 GHz
+Näytönohjain: Inter(R) HD Graphics 620
+RAM: 8 gb
+
+
+## x)
+
+- https://httpd.apache.org/docs/2.4/vhosts/name-based.html : Nimipohjainen verkkoisännöinti mahdollistaa useamman sivun ylläpitämisen yhdestä IP-osoitteesta, toisin kuin IP-osoitteeseen perustuva isännöinti, joka sallii vain yhden per osoite.
+- https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ : Karvinen käy artikkelissaan läpi nimipohjaisen verkkoisännöinnin peruskomennot ja sivustojen määrittämisen.
+
 ## a)
 
 Testaan curl-komennolla, että saan yhteyden localhost-osoitteeseen. Tuloksena näkyy itse asettamani yksinkertainen testisivu, jonka tein harjoituksena tunnilla. Eli yhteys toimii.
