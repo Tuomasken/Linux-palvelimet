@@ -44,7 +44,7 @@ Molempien käskyjen yhteydessä boottasin demonin, koska tein siihen muutoksia:
 
     $ sudo systemctl restart apache2
 
-Kokeilin curl localhost -komennolla latautuuko etusivu, sain vastaavan virheilmoituksen: 
+Kokeilin curl localhost -komennolla latautuuko etusivu, ei onnistunut (Statuskoodi 403). Kävin katsomassa apache2:n error.log, josta löysin relevantin virheilmoituksen: 
 
 ![Virhe1](H3/Virhe1.png)
 
@@ -58,7 +58,7 @@ Seuraavaksi kirjoitin yksinkertaisen html-koodin sivulle ja lisäsin sen index.h
 
 ![Etusivun](H3/Etusivu.png)
 
-Tämän jälkeen kävin validoimassa kirjoittamani HTML5:n osoitteessa [https://validator.w3.org/](https://validator.w3.org/#validate_by_input). Ei ongelmia:
+Tämän jälkeen kävin validoimassa kirjoittamani HTML5:n osoitteessa https://validator.w3.org/#validate_by_input. Ei ongelmia:
 
 ![Validointi](H3/Validi.png)
 
