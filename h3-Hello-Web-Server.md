@@ -52,6 +52,16 @@ Virheilmoituksesta tunnistin, että siellä on väärä polku listattuna, joten 
 
 ![Etusivun_testaus](H3/Testi_etusivu.png)
 
+## d) 
+
+Seuraavaksi kirjoitin yksinkertaisen html-koodin sivulle ja lisäsin sen index.html -tiedostoon, josta etusivu ladataan. Pystyin suoraan testaamaan tehtyjä muutoksia, koska muokkausoikeudet sallittiin aiemmin:
+
+![Etusivun](H3/Etusivu.png)
+
+Tämän jälkeen kävin validoimassa kirjoittamani HTML5:n osoitteessa [https://validator.w3.org/](https://validator.w3.org/#validate_by_input). Ei ongelmia:
+
+![Validointi](H3/Validi.png)
+
 
 
 
