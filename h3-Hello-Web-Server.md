@@ -62,6 +62,17 @@ Tämän jälkeen kävin validoimassa kirjoittamani HTML5:n osoitteessa [https://
 
 ![Validointi](H3/Validi.png)
 
+## e)
+
+    $ curl -I localhost 
+
+![CurlI](H3/Curl_I.png)
+
+
+    $ curl localhost
+
+
+![Curl](H3/Curl.png)
 
 
 
