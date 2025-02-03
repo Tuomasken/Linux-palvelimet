@@ -1,1 +1,61 @@
+# H3 Hello Web Server
+
+## a)
+
+Testaan curl-komennolla, että saan yhteyden localhost-osoitteeseen. Tuloksena näkyy itse asettamani yksinkertainen testisivu, jonka tein harjoituksena tunnilla. Eli yhteys toimii.
+
+![Curl_local](H3/Curl_local.png)
+
+## b)
+
+Siirryin cd-komennolla /var/log hakemistoon ja sieltä ajoin komennon "sudo tail -f apache2/other_vhosts_access.log". Tällä näin viimeisen lokin joka syntyi aiemmasta curl-komennostani:
+
+![Curl_log](H3/Curl_log.png)
+
+Tällä tulosteella osiot tarkoittavat seuraavaa:
+ -  tutu.example.com on kohdepalvelimen hostname
+ -  80 viittaa porttiin mitä kautta pyyntö kulkee. 80 on oletus HTTP-liikenteelle.
+ -  127.0.0.1 on pyynnön lähtöosoite, tässä tapauksessa palvelimeni osoite.
+ -  [03/Feb/2025:15:04:23 +0200] on aika milloin pyyntö tehtiin.
+ -  "GET / HTTP/1.1" tämä on ajettu pyyntö.
+ -  200 on HTTP statuskoodi ja tarkoittaa, että pyyntö onnistui.
+ -  240 on vastauksen koko tavuissa.
+
+## c)
+
+Lähdin tekemään uutta aloitussivua komennolla
+
+    $ sudoedit /etc/apache2/sites-available/hattu.example.com.conf
+
+ja loin sivun sisällön komennolla:
+
+    $ mkdir -p /home/tuomaske/publicsites/hattu.example.com
+    $ echo tama on hattu.example > /home/tuomaske/publicsites/hattu.example.com/index.html
+
+Tämän jälkeen lisäsin tämän uuden sivun saatavilla olevien sivujen listaan komennolla: 
+
+    $ sudo a2ensite hattu.example.com
+
+Ja poistin aiemman etusivun käytöstä komennolla:
+
+    $ sudo a2dissite tutu.example.com
+
+Molempien käskyjen yhteydessä boottasin demonin, koska tein siihen muutoksia: 
+
+    $ sudo systemctl restart apache2
+
+Kokeilin curl localhost -komennolla latautuuko etusivu, sain vastaavan virheilmoituksen: 
+
+![Virhe1](H3/Virhe1.png)
+
+Virheilmoituksesta tunnistin, että siellä on väärä polku listattuna, joten menin tarkastamaan conf-tiedoston. Ja siellä oli kuin olikin jäänyt kirjoitusvirhe. Korjasin sen ja kokeilin uudelleen curl localhost, toimi. Lisäksi kokeilin selaimella: 
+
+![Etusivun_testaus](H3/Testi_etusivu.png)
+
+
+
+
+
+
+
 
