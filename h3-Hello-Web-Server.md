@@ -61,7 +61,7 @@ Boottasin demonin, koska tein siihen muutoksia:
 
 Kokeilin curl localhost -komennolla latautuuko etusivu, ei onnistunut (Statuskoodi 403). Kävin katsomassa apache2:n error.log, josta löysin relevantin virheilmoituksen: 
 
-![Virhe1](H3/Virhe1.png)
+![Error1](H3/Error1.png)
 
 Virheilmoituksesta tunnistin, että siellä on väärä polku listattuna, joten menin tarkastamaan conf-tiedoston. Ja siellä oli kuin olikin jäänyt kirjoitusvirhe. Korjasin sen ja kokeilin uudelleen curl localhost, toimi. Lisäksi kokeilin selaimella: 
 
