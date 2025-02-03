@@ -55,7 +55,7 @@ Ja poistin aiemman etusivun käytöstä komennolla:
 
     $ sudo a2dissite tutu.example.com
 
-Molempien käskyjen yhteydessä boottasin demonin, koska tein siihen muutoksia: 
+Boottasin demonin, koska tein siihen muutoksia: 
 
     $ sudo systemctl restart apache2
 
@@ -88,14 +88,14 @@ Tämän jälkeen kävin validoimassa kirjoittamani HTML5:n osoitteessa https://v
 
 ![CurlI](H3/Curl_I.png)
 
-Toisin kuin GET-pyyntö, HEAD-pyyntö (curl -I) pyytää palvelimelta vain kyseisen sivun otsikot. Saadussa tulosteessa näkyy mm. vastauksen statuskoodi (eli esim. onnistuiko pyyntö eli koodi 200), millaista sisältöä kohde on (esim. text/html) ja milloin viimeksi kohteen sisältöä on muokattu.
+Toisin kuin GET-pyyntö, HEAD-pyyntö (curl -I) pyytää palvelimelta vain kyseisen sivun otsikkeet. Saadussa tulosteessa näkyy mm. vastauksen statuskoodi (eli esim. onnistuiko pyyntö eli koodi 200), millaista sisältöä kohde on (esim. text/html) ja milloin viimeksi kohteen sisältöä on muokattu.
 
 
 
 ## Lähteet
 
-https://httpd.apache.org/docs/2.4/vhosts/name-based.html
-https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
+1. https://httpd.apache.org/docs/2.4/vhosts/name-based.html lainattu 03.02.2025.
+2. https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address lainattu 03.02.2025.
 
 
 
