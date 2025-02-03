@@ -52,7 +52,7 @@ Virheilmoituksesta tunnistin, että siellä on väärä polku listattuna, joten 
 
 ![Etusivun_testaus](H3/Testi_etusivu.png)
 
-## d) 
+## e) 
 
 Seuraavaksi kirjoitin yksinkertaisen html-koodin sivulle ja lisäsin sen index.html -tiedostoon, josta etusivu ladataan. Pystyin suoraan testaamaan tehtyjä muutoksia, koska muokkausoikeudet sallittiin aiemmin:
 
@@ -62,17 +62,22 @@ Tämän jälkeen kävin validoimassa kirjoittamani HTML5:n osoitteessa [https://
 
 ![Validointi](H3/Validi.png)
 
-## e)
+## f)
+
+    $ curl localhost
+
+![Curl](H3/Curl.png)
+
 
     $ curl -I localhost 
 
 ![CurlI](H3/Curl_I.png)
 
+Toisin kuin GET-pyyntö, HEAD-pyyntö (curl -I) pyytää palvelimelta vain kyseisen sivun otsikot. Saadussa tulosteessa näkyy mm. vastauksen statuskoodi (eli esim. onnistuiko pyyntö eli koodi 200), millaista sisältöä kohde on (esim. text/html) ja milloin viimeksi kohteen sisältöä on muokattu.
 
-    $ curl localhost
 
 
-![Curl](H3/Curl.png)
+
 
 
 
