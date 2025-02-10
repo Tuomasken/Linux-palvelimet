@@ -2,9 +2,16 @@
 
 ## a)
 
-Aluksi kävin luomassa tunnuksen palveluun upcloud.com. Tämän jälkeen vuokrasin palvelimen luennolla annettujen speksien mukaisesti. Samassa yhteydessä loin SSH-avainparin isäntävirtuaalikoneella, jolla tunnistautua uudelle virtuaalikoneelle.
+Aluksi kävin luomassa tunnuksen palveluun upcloud.com. Tämän jälkeen vuokrasin palvelimen luennolla annettujen speksien mukaisesti.
 
 ![Palvelin](https://github.com/user-attachments/assets/bd180df2-6189-44c1-8616-74a1a8952702)
+
+Samassa yhteydessä loin SSH-avainparin isäntävirtuaalikoneella, jolla tunnistautua uudelle virtuaalikoneelle. Lisäksi kävin kopioimassa sen palvelimen asennusta varten:
+
+        $ ssh-keygen
+        $ micro tuomaske/.ssh/id_rsa.pub # Kopioin tekstisisällön Ctrl-C komennolla
+
+## b)
 
 
 Kirjauduin virtuaalikoneellani palvelimelle ja aloitin alkutoimet. Asensin aluksi tulimuurin ja muita hyödyllisiä ohjelmia komennoilla
@@ -28,7 +35,7 @@ Tämän jälkeen palasin exit-komennolla paikalliselle virtuaalikoneelle, ja kir
     $ sudo usermod --lock root
     $ sudo mv -nv /root/.ssh /root/DISABLED-ssh/
 
-## b)
+## c)
 
 Asensin apache2 ja korvasin aloitussivun sanalla "Testi":
 
