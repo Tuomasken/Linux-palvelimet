@@ -38,3 +38,5 @@ Asensin apache2 ja korvasin aloitussivun sanalla "Testi":
 Testasin, että aloitussivu on muuttunut:
 
 ![Aloitussivu](https://github.com/user-attachments/assets/cbaf06c8-34e7-4b4f-a7e7-12afbeaa7995)
+
+
