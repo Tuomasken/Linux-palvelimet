@@ -22,3 +22,19 @@ Seuraavaksi loin uuden käyttäjän, jolla on sudo-oikeudet. Lisäksi kopioin si
     $ sudo adduser tuomaske sudo
     $ sudo cp -rvn /root/.ssh/ /home/tuomaske/
     $ sudo chown -R tuomaske:tuomaske /home/tuomaske/
+
+Tämän jälkeen palasin exit-komennolla paikalliselle virtuaalikoneelle, ja kirjauduin palvelimelle uudelle käyttäjälle. Kirjauduttuani ongelmitta tuomaske-käyttäjänä, suljin root-tunnuksen ja poistin sen SSH-oikeudet:
+
+    $ sudo usermod --lock root
+    $ sudo mv -nv /root/.ssh /root/DISABLED-ssh/
+
+## b)
+
+Asensin apache2 ja korvasin aloitussivun sanalla "Testi":
+
+    $ sudo apt-get -y install apache2
+    $ echo "Testi"|sudo tee /var/www/html/index.html
+
+Testasin, että aloitussivu on muuttunut:
+
+![Aloitussivu](https://github.com/user-attachments/assets/cbaf06c8-34e7-4b4f-a7e7-12afbeaa7995)
