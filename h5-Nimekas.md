@@ -47,7 +47,7 @@ Oletin tämän tarkoittavan, että apachella ei ole käyttöoikeuksia lokitapaht
 
 ![image](https://github.com/user-attachments/assets/07217239-54a0-42a4-85f5-f4b63923c965)
 
-Ajattelin execute-oikeuksien puuttumisen others-ryhmän jäseniltä tukevan päätelmääni, joten lisäsin kaikille ryhmille execute-oikeudet:
+Ajattelin execute-oikeuksien puuttumisen others-ryhmän jäseniltä tukevan päätelmääni, joten lisäsin kaikille ryhmille execute-oikeudet. Lisäksi tässä näkyy, kuinka sivua pystyy muokkaamaan user-ryhmän jäsenenä ilman pääkäyttäjien oikeuksia:
 
 ![image](https://github.com/user-attachments/assets/42328c82-fbc5-47b6-ae25-653ec4f611d1)
 
@@ -66,6 +66,18 @@ Tämän jälkeen kokeilin jälleen curl-komentoa, ei toiminut, mutta lokitapahtu
 Tämä korjaantui siirtymällä lokitapahtumassa mainitulle polulle, jossa huomasin kirjoitusvirheen hakemistossa. Korjasin asian ja kokeilin uudelleen sivua, ja se toimi.
 
 ![image](https://github.com/user-attachments/assets/eb0c4842-8471-429a-b258-6c9c7eac12cf)
+
+
+## c)
+
+![image](https://github.com/user-attachments/assets/deab6018-9845-4d04-8550-d0716a24467d)
+
+![image](https://github.com/user-attachments/assets/cca3b253-c808-4745-a6f1-bc950b7429ea)
+
+![image](https://github.com/user-attachments/assets/5a7c54aa-19ba-4e77-9925-40d18ea2c0ed)
+
+
+
 
 
 
