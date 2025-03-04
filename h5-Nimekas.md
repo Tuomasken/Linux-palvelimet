@@ -116,11 +116,19 @@ Mikä antoi seuraavanlaisen tuloksen:
 
 ![image](https://github.com/user-attachments/assets/6750a0a1-ebb0-4e23-996d-c2ee91dcf08b)
 
-Tämän tuloksen ja dellä mainitun sivun (geeksforgeeks.org) artikkelin perusteella päättelisin, että host-komento haki DNS-palvelun kautta domainin kenttala.com osoitetiedot.
+Tämän tuloksen ja dellä mainitun sivun (geeksforgeeks.org) artikkelin perusteella päättelisin, että host-komento haki DNS-palvelun kautta domainin kenttala.com IP-osoitteen ja myös siihen liitetyt postinvälityspalvelut.
 
 Tarkastelin myös alidomainia blog.kenttala.com host-komennolla, ja se osasi kertoa, että kyseinen domain on alias kenttala.com domainille.
 
 ![image](https://github.com/user-attachments/assets/cd35012d-3e6f-413d-a8f0-f6d49dea4c15)
+
+Seuraavaksi kokeilin komentoa:
+
+        $ dig kenttala.com
+        
+![image](https://github.com/user-attachments/assets/e808f5a8-9920-4b87-97da-238d95ca98d3)
+
+Dig-komento kertoo laajemmin domainin DNS-tiedoista kuin host, mm. että kyseessä on A-tietue.
 
 Lisäksi kokeilin komentoa:
 
@@ -136,6 +144,19 @@ Seuraavaksi tarkastelin domainin pohjoispohjalaiset.fi osoitetietoja host ja dig
 
 ![image](https://github.com/user-attachments/assets/c4b43a06-ff22-4196-8ac1-ff1c54bb9bcd)
 ![image](https://github.com/user-attachments/assets/fb48fe91-0cae-4ecb-be6f-91fe637fec79)
+
+Tämän pohjalta voi todeta kyseisen domainin IP-osoitteen olevan 79.134.114.226 ja että heidän postinvälityspalvelu on outlook.
+
+
+Seuraavaksi tarkastelin domainin facebook.com osoitetietoja host ja dig komennoilla:
+
+![image](https://github.com/user-attachments/assets/41ad1e19-6010-4219-b6f3-f4aad66c2e55)
+![image](https://github.com/user-attachments/assets/b163cdfa-4e82-4022-adc2-b1cc8a72eea1)
+
+Poiketen aiemmista tuloksista, facebook.com domainilla on myös AAAA-tietue, mikä vaikuttaisi olevan IPv6-osoite.
+Lisäksi tuloksista löytyy HTTPS-tietue, joka kertoo suojatusta yhteydestä kyseiseen domainiin.
+
+
 
 
 
