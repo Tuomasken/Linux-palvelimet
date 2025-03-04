@@ -1,4 +1,4 @@
-# H5 Salataampa
+# H6 Salataampa
 
 
 ## Harjoituksessa käytetyn koneen parametrejä
