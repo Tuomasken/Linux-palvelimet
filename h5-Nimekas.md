@@ -70,9 +70,15 @@ Tämä korjaantui siirtymällä lokitapahtumassa mainitulle polulle, jossa huoma
 
 ## c)
 
+Tässä harjoituksessa lähdin luomaan kotisivua, joka sisältää kolme erillistä alasivua. Loin aluksi jo olemassa olevan index.html:n lisäksi kaksi muuta alasivua (blog.html ja projects.html):
+
 ![image](https://github.com/user-attachments/assets/deab6018-9845-4d04-8550-d0716a24467d)
 
+Tämän jälkeen kirjoitin jokaiseen html-tiedostoon koodia. Apua koodin sivujen väliseen viittaamiseen kysyin tekoälyltä (chatgpt.com). Tässä on esimerkki etusivun html-koodista:
+
 ![image](https://github.com/user-attachments/assets/cca3b253-c808-4745-a6f1-bc950b7429ea)
+
+Ja tässä on lopputulos, joka päivittyi automaattisesti muokattuani html-tiedostoa:
 
 ![image](https://github.com/user-attachments/assets/5a7c54aa-19ba-4e77-9925-40d18ea2c0ed)
 
