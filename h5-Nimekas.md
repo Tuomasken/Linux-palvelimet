@@ -103,6 +103,44 @@ Testasin molempien alidomainien toimivuutta:
 
 ## e)
 
+Aluksi kokeilin komentoja dig ja host, mutta niitä ei löytynyt. Googletin ja löysin sivun https://www.geeksforgeeks.org/dig-command-in-linux-with-examples/, minkä kautta selvisi, että ne pitää asentaa.
+Ajoin komennon:
+
+        $ sudo apt-get install dnsutils
+
+Tämän jälkeen ajoin komennon:
+
+        $ host kenttala.com
+
+Mikä antoi seuraavanlaisen tuloksen:
+
+![image](https://github.com/user-attachments/assets/6750a0a1-ebb0-4e23-996d-c2ee91dcf08b)
+
+Tämän tuloksen ja dellä mainitun sivun (geeksforgeeks.org) artikkelin perusteella päättelisin, että host-komento haki DNS-palvelun kautta domainin kenttala.com osoitetiedot.
+
+Tarkastelin myös alidomainia blog.kenttala.com host-komennolla, ja se osasi kertoa, että kyseinen domain on alias kenttala.com domainille.
+
+![image](https://github.com/user-attachments/assets/cd35012d-3e6f-413d-a8f0-f6d49dea4c15)
+
+Lisäksi kokeilin komentoa:
+
+        $ dig kenttala.com ANY
+
+Tämä komento antoi kaikki DNS-tiedot domainiin liittyen:
+
+![image](https://github.com/user-attachments/assets/c11b08a6-2e1d-4a54-a185-d45a82ac57ca)
+
+
+
+Seuraavaksi tarkastelin domainin pohjoispohjalaiset.fi osoitetietoja host ja dig komennoilla:
+
+![image](https://github.com/user-attachments/assets/c4b43a06-ff22-4196-8ac1-ff1c54bb9bcd)
+![image](https://github.com/user-attachments/assets/fb48fe91-0cae-4ecb-be6f-91fe637fec79)
+
+
+
+
+
 
 
 
