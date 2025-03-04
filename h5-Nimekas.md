@@ -25,5 +25,12 @@ Olin jo aiemmin vuokrannut Namecheap.com palvelusta domainin kenttala.com, eli k
 
 ![image](https://github.com/user-attachments/assets/42328c82-fbc5-47b6-ae25-653ec4f611d1)
 
+![image](https://github.com/user-attachments/assets/fc002343-57f0-4cf1-ac4d-e983604688dc)
+
+![image](https://github.com/user-attachments/assets/888dad1e-b1b9-45d5-8f26-0a7d76d75369)
+
+![image](https://github.com/user-attachments/assets/7351ce6d-8ac2-4365-8cbb-adb584f697d7)
+
+
 
 
