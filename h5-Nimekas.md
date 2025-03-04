@@ -13,3 +13,11 @@
 
 ## a)
 
+Olin jo aiemmin vuokrannut Namecheap.com palvelusta domainin kenttala.com, eli käytän sitä tässä harjoituksessa.
+
+## b)
+
+![image](https://github.com/user-attachments/assets/cdfb3f66-cc90-4060-82ae-c4cea3e8ebf7)
+
+
+
