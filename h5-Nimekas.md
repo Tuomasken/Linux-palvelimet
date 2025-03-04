@@ -93,6 +93,16 @@ Tässä osiossa loin kaksi uutta alidoimainia sivulleni, jotka avaavat saman siv
 
 ![image](https://github.com/user-attachments/assets/355cd4ce-55af-4c00-89bf-b25e19c9b88d)
 
+Testasin molempien alidomainien toimivuutta:
+
+![image](https://github.com/user-attachments/assets/1ef850ee-8795-4ce4-b5ad-f3675a607d9e)
+
+![image](https://github.com/user-attachments/assets/af073012-6519-4673-8871-6a0d0b62de64)
+
+
+
+## e)
+
 
 
 
