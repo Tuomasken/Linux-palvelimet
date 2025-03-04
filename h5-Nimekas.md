@@ -78,9 +78,22 @@ Tämän jälkeen kirjoitin jokaiseen html-tiedostoon koodia. Apua koodin sivujen
 
 ![image](https://github.com/user-attachments/assets/cca3b253-c808-4745-a6f1-bc950b7429ea)
 
-Ja tässä on lopputulos, joka päivittyi automaattisesti muokattuani html-tiedostoa:
+Ja tässä on lopputulos, joka päivittyi automaattisesti muokattuani html-tiedostoa. Kaikki alasivut toimivat tarkoituksenmukaisesti:
 
 ![image](https://github.com/user-attachments/assets/5a7c54aa-19ba-4e77-9925-40d18ea2c0ed)
+
+Lisäksi tarkistin sivuni HTML-koodin palvelulla https://validator.w3.org/
+
+![image](https://github.com/user-attachments/assets/74794634-b2aa-48cf-8efe-b0c436c05925)
+
+
+## d)
+
+Tässä osiossa loin kaksi uutta alidoimainia sivulleni, jotka avaavat saman sivun kuin päädomain-osoite. Luodut alidoimainit ovat blog.kenttala.com ja portfolio.kenttala.com.
+
+![image](https://github.com/user-attachments/assets/355cd4ce-55af-4c00-89bf-b25e19c9b88d)
+
+
 
 
 
