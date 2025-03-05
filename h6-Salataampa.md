@@ -48,7 +48,9 @@ Aluksi tarkistin, että toimiihan sivustoni vielä. Tämän tein käynnistämäl
 
 Tämän jälkeen kävin isäntäkoneella katsomassa toimiiko sivut vielä.
 
+
 ![image](https://github.com/user-attachments/assets/a80a7ec9-e4cb-46cd-abf9-3ee2226e85ee)
+
 
 Sivut toimivat kuten pitääkin, eli nyt meillä on varmuus, että lähdemme tulevaan tehtävänosioon toimivalta pohjalta. Tämä auttaa mahdollisten ongelmien diagnostiikassa rajaamalla mahdolliset syyt ensisijaisesti muutoksiin, mitä tullaan tekemään tehtävän yhteydessä.
 
@@ -59,7 +61,9 @@ Lähdin asentamaan LEGO:a, mikä on "Let’s Encrypt client and ACME library wri
 
 Seuraavaksi loin LEGOlle kansion tuomaske-käyttäjän alle ja tarkistin, että se onnistui:
 
+
 ![image](https://github.com/user-attachments/assets/ec3af4fc-7e14-467a-bd02-544b2e2fb0ee)
+
 
 Loin aluksi sertifikaatin Let's Encrypting tarjoamaan staging-ympäristöön testaamista varten. Tähän käytin komentoa, jonka pohjan sain osoitteesta https://terokarvinen.com/2024/linux-palvelimet-2024p1-alkusyksy-ici003as2a-3010/ (Karvinen 2025).
 
@@ -75,7 +79,9 @@ Loin aluksi sertifikaatin Let's Encrypting tarjoamaan staging-ympäristöön tes
 
 Komennon ajettuani sain seuraavanlaisen virheilmoituksen:
 
+
 ![image](https://github.com/user-attachments/assets/73f5f42d-61ff-4998-8eb3-a42f8cdb8e74)
+
 
 Kopioin aluksi koko webroot-polun, jonka olin pistänyt komentoon, yritin siirtyä sinne cd-komennolla ja sain virheilmoituksen, että kansiota ei ole. Poistin polun viimeisen osan ja yritin uudelleen ja jatkoin tätä, kunnes onnistuin siirtymään /home/tuomaske/ kansioon, jossa ls-komennolla katsoin mitä se sisältää. Ja löysin virheen syyn, public-sites oli väärin kirjoitettu:
 
