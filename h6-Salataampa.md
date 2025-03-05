@@ -104,15 +104,32 @@ Kokeilin aiempaa komentoa uudelleen, ja sain sertifikaatit:
 
 ![image](https://github.com/user-attachments/assets/ee87be6b-90bc-430a-a0f2-bf5d61a0a04f)
 
+Saatuani sertifikaatit, siirryin muokkaamaan name based virtual host -asetuksia (/etc/apache2/sites-available/kenttala.com.conf). Pohjan muokkaukselle sain osoitteesta https://terokarvinen.com/2024/linux-palvelimet-2024p1-alkusyksy-ici003as2a-3010/ (Karvinen 2025). Lopputulos oli seuraavankaltainen:
+
 ![image](https://github.com/user-attachments/assets/2e156540-7222-4726-bafb-48b6faa03bdc)
 
-Yritin potkaista demonia, sain virheilmoituksen:
+Otin SSL:n käyttöön komennolla
+
+    $ sudo a2enmod ssl
+
+Ja yritin potkaista demonia, jolloin sain virheilmoituksen:
+
 ![image](https://github.com/user-attachments/assets/02e3d580-e70c-4eef-a501-04734ab5ffec)
 
-Ajoin configtest:
+Ajoin komennon
+
+    $ sudo apache2ctl configtest
+    
+Joka antoi seuraavanlaisen lokitiedon:
+
 ![image](https://github.com/user-attachments/assets/2f9d8492-26de-4d02-9bb7-6dbb1c693c07)
 
+Tämän tiedon pohjilta siirryin kyseiseen polkuun /home/tuomaske/lego/certificates/ tarkastelemaan tilannetta, ja löysin certificates-kansion tuplana seuraavan kuvan mukaisesti: 
+
 ![image](https://github.com/user-attachments/assets/6a1a6709-9b28-4ea9-a703-703f845ec9cd)
+
+Se miksi näin tapahtui, on minulle täysi mysteeri. Mutta siirryin muokkaamaan tämän tiedon pohjalta tiedostoa /etc/apache2/sites-available/kenttala.com.conf. Samalla huomasin kirjoitusvirheen ja korjasin sen (kenttala.key => kenttala.com.key).
+
 
 Testasin isäntäkoneella osoitetta https://kenttala.com ja se oli suojattu:
 
