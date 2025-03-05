@@ -65,10 +65,11 @@ En lähtenyt muuttamaan kansion nimeä, sillä en äkkiseltään ollut varma rik
 
 ![image](https://github.com/user-attachments/assets/cb6b9985-0cc4-498c-88f0-f4a81fe229f0)
 
+Tämän jälkeen oli vuorossa staging-ympäristöstä poistuminen ja oikean sertifikaatin hankkiminen. Poistin testisertifikaatin polusta /home/tuomaske/lego/ (niin että jäljelle jäi tyhjä lego-kansio) ja muokkasin sertifikaatin pyyntö -komentoa poistamalla sieltä kohdan "--server=https://acme-staging-v02.api.letsencrypt.org/directory":
 
 ![image](https://github.com/user-attachments/assets/5b14f41a-4930-497d-94c0-2d35d10dedb1)
 
-Sain seuraavanlaisen virheilmoituksen:
+Uuden komennon ajettuani sain seuraavanlaisen virheilmoituksen:
 
 ![image](https://github.com/user-attachments/assets/6c684377-79b5-41ba-ba2e-257c6a438ac2)
 
