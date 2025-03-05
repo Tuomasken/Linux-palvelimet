@@ -96,6 +96,30 @@ Siirryin tarkastelemaan ilmoituksessa mainittua status-sivua (https://letsencryp
 
 Kuriositeettina huomasin, että staging-ympäristö acme-staging-v02.api.letsencrypt.org oli myös kaatunut. Eli sertifikaatti, jonka sain klo 20:07 (UTC) on tapahtunut juuri ennen palvelun kaatumista klo 20:08.
 
+Noin 40 minuuttia myöhemmin tuli päivitys palvelun normalisoitumisesta
+
+![image](https://github.com/user-attachments/assets/0582734b-7da9-4b8b-930c-06a403efda83)
+
+Kokeilin aiempaa komentoa uudelleen, ja sain sertifikaatit:
+
+![image](https://github.com/user-attachments/assets/ee87be6b-90bc-430a-a0f2-bf5d61a0a04f)
+
+![image](https://github.com/user-attachments/assets/2e156540-7222-4726-bafb-48b6faa03bdc)
+
+Yritin potkaista demonia, sain virheilmoituksen:
+![image](https://github.com/user-attachments/assets/02e3d580-e70c-4eef-a501-04734ab5ffec)
+
+Ajoin configtest:
+![image](https://github.com/user-attachments/assets/2f9d8492-26de-4d02-9bb7-6dbb1c693c07)
+
+![image](https://github.com/user-attachments/assets/6a1a6709-9b28-4ea9-a703-703f845ec9cd)
+
+
+
+
+
+
+
 
 
 
