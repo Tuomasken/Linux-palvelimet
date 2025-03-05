@@ -61,8 +61,6 @@ Loin aluksi sertifikaatin Let's Encrypting tarjoamaan staging-ympäristöön tes
       --pem  \
       run
 
-![image](https://github.com/user-attachments/assets/d57b07c8-3288-4e87-9bac-5b13f2187943)
-
 Komennon ajettuani sain seuraavanlaisen virheilmoituksen:
 
 ![image](https://github.com/user-attachments/assets/73f5f42d-61ff-4998-8eb3-a42f8cdb8e74)
