@@ -75,6 +75,16 @@ En lähtenyt muuttamaan kansion nimeä, sillä en äkkiseltään ollut varma rik
 
 Tämän jälkeen oli vuorossa staging-ympäristöstä poistuminen ja oikean sertifikaatin hankkiminen. Poistin testisertifikaatin polusta /home/tuomaske/lego/ (niin että jäljelle jäi tyhjä lego-kansio) ja muokkasin sertifikaatin pyyntö -komentoa poistamalla sieltä kohdan "--server=https://acme-staging-v02.api.letsencrypt.org/directory":
 
+
+    $ lego \
+      --accept-tos  \
+      --email="tuomaske@hotmail.com" \
+      --domains="kenttala.com" --domains="www.kenttala.com" \
+      --http --http.webroot="/home/tuomaske/publicsites/kenttala.com/" \
+      --path="/home/tuomaske/lego/certificates/" \
+      --pem  \
+      run
+
 ![image](https://github.com/user-attachments/assets/5b14f41a-4930-497d-94c0-2d35d10dedb1)
 
 Uuden komennon ajettuani sain seuraavanlaisen virheilmoituksen:
