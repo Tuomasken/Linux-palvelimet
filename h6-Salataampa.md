@@ -13,18 +13,30 @@
 
 ## x)
 
-Let's Encrypt 2024 https://letsencrypt.org/how-it-works/ :
 
-- Let's Encrypt tarjoaa automatisoidun HTTPS-sertifioinnin verkkosivuille.
-- Tämä tapahtuu asentamalla sertifikaatin hallintatyökalu verkkopalvelimelle, joka 1) todistaa CA:lle, että verkkopalvelin omistaa käsiteltävän verkkodomainin, 2) tämän jälkeen hallintatyökalu voi pyytää, uusia ja hylätä sertifikaatin.
+Let's Encrypt 2024 https://letsencrypt.org/how-it-works/ :
+   - Let's Encrypt tarjoaa automatisoidun HTTPS-sertifioinnin verkkosivuille.
+   - Tämä tapahtuu asentamalla sertifikaatin hallintatyökalu verkkopalvelimelle, joka 1) todistaa CA:lle, että verkkopalvelin omistaa käsiteltävän verkkodomainin, 2) tämän jälkeen         
+      hallintatyökalu voi pyytää, uusia ja hylätä sertifikaatin.
 
 Lange 2024: Lego: Obtain a Certificate https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server
 
--
+   - Tässä artikkelissa ohjeistetaan sertifikaatin hankkimiseen eri skenaarioissa, mm. meille relevantti tilanne eli kun omaa jo toimivan verkkopalvelimen.
 
 The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official] Documentation: SSL/TLS Strong Encryption: How-To https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample
 
--
+   - Tämä on virallinen apachen dokumentaatioa SSL-yhteyden luomiselle ja määrittämiselle.
+   - Meitä kiinnostava kohta artikkelissa on esimerkki perus SSL-konfiguraatiosta, jota tulemme käyttämään hieman muokattuna tässä harjoituksessa:
+     
+    LoadModule ssl_module modules/mod_ssl.so
+
+    Listen 443
+    <VirtualHost *:443>
+        ServerName www.example.com
+        SSLEngine on
+        SSLCertificateFile "/path/to/www.example.com.cert"
+        SSLCertificateKeyFile "/path/to/www.example.com.key"
+    </VirtualHost>
 
 
 ## a) 
@@ -128,7 +140,7 @@ Tämän tiedon pohjilta siirryin kyseiseen polkuun /home/tuomaske/lego/certifica
 
 ![image](https://github.com/user-attachments/assets/6a1a6709-9b28-4ea9-a703-703f845ec9cd)
 
-Se miksi näin tapahtui, on minulle täysi mysteeri. Mutta siirryin muokkaamaan tämän tiedon pohjalta tiedostoa /etc/apache2/sites-available/kenttala.com.conf. Samalla huomasin kirjoitusvirheen ja korjasin sen (kenttala.key => kenttala.com.key).
+Se miksi näin tapahtui, on minulle täysi mysteeri. Mutta siirryin muokkaamaan tämän tiedon pohjalta tiedostoa /etc/apache2/sites-available/kenttala.com.conf, johon päivitin käyteyn polun. Samalla huomasin kirjoitusvirheen ja korjasin sen (kenttala.key => kenttala.com.key).
 
 
 Testasin isäntäkoneella osoitetta https://kenttala.com ja se oli suojattu:
@@ -137,7 +149,18 @@ Testasin isäntäkoneella osoitetta https://kenttala.com ja se oli suojattu:
 
 ## b)
 
+Tässä osiossa lähdin testaamaan uutta sertifikaatilla varustettua sivuani laadunvarmistustyökalulla https://www.ssllabs.com/ssltest/. Kirjoitin tarjottuun kenttään domainin kenttala.com ja ajoin testin. Testissä kesti noin 1,5 minuuttia. Lopputulos oli oman tulkintani mukaan riittävän laadukas ja tukee nykyaikaisia protokollia:
 
+![image](https://github.com/user-attachments/assets/9781b82c-1c8c-4ccd-bcc3-a32fe77ab53f)
+
+
+
+## Lähteet
+
+1. https://terokarvinen.com/linux-palvelimet Lainattu 05.03.2025
+2. https://letsencrypt.org/how-it-works/ Lainattu 05.03.2025
+3. https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server Lainattu 05.03.2025
+4. https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample Lainattu 05.03.2025
 
 
 
