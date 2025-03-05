@@ -114,6 +114,15 @@ Ajoin configtest:
 
 ![image](https://github.com/user-attachments/assets/6a1a6709-9b28-4ea9-a703-703f845ec9cd)
 
+Testasin isäntäkoneella osoitetta https://kenttala.com ja se oli suojattu:
+
+![image](https://github.com/user-attachments/assets/c2c2b614-25c9-4a18-9b81-d9ad810d8fc3)
+
+## b)
+
+
+
+
 
 
 
