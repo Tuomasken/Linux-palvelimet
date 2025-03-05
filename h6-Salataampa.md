@@ -85,7 +85,6 @@ Tämän jälkeen oli vuorossa staging-ympäristöstä poistuminen ja oikean sert
       --pem  \
       run
 
-![image](https://github.com/user-attachments/assets/5b14f41a-4930-497d-94c0-2d35d10dedb1)
 
 Uuden komennon ajettuani sain seuraavanlaisen virheilmoituksen:
 
