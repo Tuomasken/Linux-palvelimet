@@ -79,11 +79,15 @@ Komennon ajettuani sain seuraavanlaisen virheilmoituksen:
 
 Kopioin aluksi koko webroot-polun, jonka olin pistänyt komentoon, yritin siirtyä sinne cd-komennolla ja sain virheilmoituksen, että kansiota ei ole. Poistin polun viimeisen osan ja yritin uudelleen ja jatkoin tätä, kunnes onnistuin siirtymään /home/tuomaske/ kansioon, jossa ls-komennolla katsoin mitä se sisältää. Ja löysin virheen syyn, public-sites oli väärin kirjoitettu:
 
+
 ![image](https://github.com/user-attachments/assets/6bcdee49-4698-463c-90cb-c1e4b7862a9d)
+
 
 En lähtenyt muuttamaan kansion nimeä, sillä en äkkiseltään ollut varma rikkoisiko se mahdollisesti joitain muita asetuksia. Eli korjasin webrootin komennossa heijastamaan koneeni konfiguraatiota sen sijaan (ja pistin muistiin kyseisen eroavaisuuden tulevia koitoksia varten). Ajettuani korjatun komennon, sain sertifikaatin:
 
+
 ![image](https://github.com/user-attachments/assets/cb6b9985-0cc4-498c-88f0-f4a81fe229f0)
+
 
 Tämän jälkeen oli vuorossa staging-ympäristöstä poistuminen ja oikean sertifikaatin hankkiminen. Poistin testisertifikaatin polusta /home/tuomaske/lego/ (niin että jäljelle jäi tyhjä lego-kansio) ja muokkasin sertifikaatin pyyntö -komentoa poistamalla sieltä kohdan "--server=https://acme-staging-v02.api.letsencrypt.org/directory":
 
@@ -100,25 +104,35 @@ Tämän jälkeen oli vuorossa staging-ympäristöstä poistuminen ja oikean sert
 
 Uuden komennon ajettuani sain seuraavanlaisen virheilmoituksen:
 
+
 ![image](https://github.com/user-attachments/assets/6c684377-79b5-41ba-ba2e-257c6a438ac2)
+
 
 Siirryin tarkastelemaan ilmoituksessa mainittua status-sivua (https://letsencrypt.status.io/), ja kuinka ollakaan, koko palvelu oli alhaalla:
 
+
 ![image](https://github.com/user-attachments/assets/429b3e68-5aa2-4533-8ab4-76545d675235)
 
-Kuriositeettina huomasin, että staging-ympäristö acme-staging-v02.api.letsencrypt.org oli myös kaatunut. Eli sertifikaatti, jonka sain klo 20:07 (UTC) on tapahtunut juuri ennen palvelun kaatumista klo 20:08.
+
+Kuriositeettina huomasin, että staging-ympäristö acme-staging-v02.api.letsencrypt.org oli myös kaatunut. Eli sertifikaatti, jonka sain klo 20:07 (UTC) oli tapahtunut juuri ennen palvelun kaatumista klo 20:08.
 
 Noin 40 minuuttia myöhemmin tuli päivitys palvelun normalisoitumisesta
 
+
 ![image](https://github.com/user-attachments/assets/0582734b-7da9-4b8b-930c-06a403efda83)
+
 
 Kokeilin aiempaa komentoa uudelleen, ja sain sertifikaatit:
 
+
 ![image](https://github.com/user-attachments/assets/ee87be6b-90bc-430a-a0f2-bf5d61a0a04f)
+
 
 Saatuani sertifikaatit, siirryin muokkaamaan name based virtual host -asetuksia (/etc/apache2/sites-available/kenttala.com.conf). Pohjan muokkaukselle sain osoitteesta https://terokarvinen.com/2024/linux-palvelimet-2024p1-alkusyksy-ici003as2a-3010/ (Karvinen 2025). Lopputulos oli seuraavankaltainen:
 
+
 ![image](https://github.com/user-attachments/assets/2e156540-7222-4726-bafb-48b6faa03bdc)
+
 
 Otin SSL:n käyttöön komennolla
 
@@ -126,32 +140,44 @@ Otin SSL:n käyttöön komennolla
 
 Ja yritin potkaista demonia, jolloin sain virheilmoituksen:
 
+
 ![image](https://github.com/user-attachments/assets/02e3d580-e70c-4eef-a501-04734ab5ffec)
+
 
 Ajoin komennon
 
     $ sudo apache2ctl configtest
     
-Joka antoi seuraavanlaisen lokitiedon:
+Joka antoi hieman tarkemman virheilmoituksen:
+
 
 ![image](https://github.com/user-attachments/assets/2f9d8492-26de-4d02-9bb7-6dbb1c693c07)
 
+
 Tämän tiedon pohjilta siirryin kyseiseen polkuun /home/tuomaske/lego/certificates/ tarkastelemaan tilannetta, ja löysin certificates-kansion tuplana seuraavan kuvan mukaisesti: 
 
+
 ![image](https://github.com/user-attachments/assets/6a1a6709-9b28-4ea9-a703-703f845ec9cd)
+
 
 Se miksi näin tapahtui, on minulle täysi mysteeri. Mutta siirryin muokkaamaan tämän tiedon pohjalta tiedostoa /etc/apache2/sites-available/kenttala.com.conf, johon päivitin käyteyn polun. Samalla huomasin kirjoitusvirheen ja korjasin sen (kenttala.key => kenttala.com.key).
 
 
 Testasin isäntäkoneella osoitetta https://kenttala.com ja se oli suojattu:
 
+
 ![image](https://github.com/user-attachments/assets/c2c2b614-25c9-4a18-9b81-d9ad810d8fc3)
+
 
 ## b)
 
 Tässä osiossa lähdin testaamaan uutta sertifikaatilla varustettua sivuani laadunvarmistustyökalulla https://www.ssllabs.com/ssltest/. Kirjoitin tarjottuun kenttään domainin kenttala.com ja ajoin testin. Testissä kesti noin 1,5 minuuttia. Lopputulos oli oman tulkintani mukaan riittävän laadukas ja tukee nykyaikaisia protokollia:
 
+
 ![image](https://github.com/user-attachments/assets/9781b82c-1c8c-4ccd-bcc3-a32fe77ab53f)
+
+
+Lisäksi testin tuloksista näkyi tarkemmin tietoja domainin sertifikaateista (mm. vanheneminen), tuetuista STL-versioista sekä salauskielistä ja verkkopalvelimen perustietoja.
 
 
 
