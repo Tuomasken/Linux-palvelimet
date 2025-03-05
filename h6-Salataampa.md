@@ -94,6 +94,8 @@ Siirryin tarkastelemaan ilmoituksessa mainittua status-sivua (https://letsencryp
 
 ![image](https://github.com/user-attachments/assets/429b3e68-5aa2-4533-8ab4-76545d675235)
 
+Kuriositeettina huomasin, että staging-ympäristö acme-staging-v02.api.letsencrypt.org oli myös kaatunut. Eli sertifikaatti, jonka sain klo 20:07 (UTC) on tapahtunut juuri ennen palvelun kaatumista klo 20:08.
+
 
 
 
