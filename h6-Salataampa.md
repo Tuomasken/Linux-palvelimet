@@ -53,6 +53,33 @@ Loin aluksi sertifikaatin Let's Encrypting tarjoamaan staging-ympäristöön tes
 
 ![image](https://github.com/user-attachments/assets/d57b07c8-3288-4e87-9bac-5b13f2187943)
 
+Komennon ajettuani sain seuraavanlaisen virheilmoituksen:
+
+![image](https://github.com/user-attachments/assets/73f5f42d-61ff-4998-8eb3-a42f8cdb8e74)
+
+Kopioin aluksi koko webroot-polun, jonka olin pistänyt komentoon, yritin siirtyä sinne cd-komennolla ja sain virheilmoituksen, että kansiota ei ole. Poistin polun viimeisen osan ja yritin uudelleen ja jatkoin tätä, kunnes onnistuin siirtymään /home/tuomaske/ kansioon, jossa ls-komennolla katsoin mitä se sisältää. Ja löysin virheen syyn, public-sites oli väärin kirjoitettu:
+
+![image](https://github.com/user-attachments/assets/6bcdee49-4698-463c-90cb-c1e4b7862a9d)
+
+En lähtenyt muuttamaan kansion nimeä, sillä en äkkiseltään ollut varma rikkoisiko se mahdollisesti joitain muita asetuksia. Eli korjasin webrootin komennossa heijastamaan koneeni konfiguraatiota sen sijaan (ja pistin muistiin kyseisen eroavaisuuden tulevia koitoksia varten). Ajettuani korjatun komennon, sain sertifikaatin:
+
+![image](https://github.com/user-attachments/assets/cb6b9985-0cc4-498c-88f0-f4a81fe229f0)
+
+
+![image](https://github.com/user-attachments/assets/5b14f41a-4930-497d-94c0-2d35d10dedb1)
+
+Sain seuraavanlaisen virheilmoituksen:
+
+![image](https://github.com/user-attachments/assets/6c684377-79b5-41ba-ba2e-257c6a438ac2)
+
+Siirryin tarkastelemaan ilmoituksessa mainittua status-sivua, ja kuinka ollakaan, koko palvelu oli alhaalla:
+
+![image](https://github.com/user-attachments/assets/429b3e68-5aa2-4533-8ab4-76545d675235)
+
+
+
+
+
 
 
     
