@@ -51,6 +51,16 @@ Seuraavaksi loin LEGOlle kansion tuomaske-käyttäjän alle ja tarkistin, että 
 
 Loin aluksi sertifikaatin Let's Encrypting tarjoamaan staging-ympäristöön testaamista varten. Tähän käytin komentoa, jonka pohjan sain osoitteesta https://terokarvinen.com/2024/linux-palvelimet-2024p1-alkusyksy-ici003as2a-3010/ (Karvinen 2025).
 
+    $ lego \
+      --server=https://acme-staging-v02.api.letsencrypt.org/directory \
+      --accept-tos  \
+      --email="tuomaske@hotmail.com" \
+      --domains="kenttala.com" --domains="www.kenttala.com" \
+      --http --http.webroot="/home/tuomaske/public_sites/kenttala.com/" \
+      --path="/home/tuomaske/lego/certificates/" \
+      --pem  \
+      run
+
 ![image](https://github.com/user-attachments/assets/d57b07c8-3288-4e87-9bac-5b13f2187943)
 
 Komennon ajettuani sain seuraavanlaisen virheilmoituksen:
