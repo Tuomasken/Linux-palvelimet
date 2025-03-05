@@ -73,7 +73,7 @@ Uuden komennon ajettuani sain seuraavanlaisen virheilmoituksen:
 
 ![image](https://github.com/user-attachments/assets/6c684377-79b5-41ba-ba2e-257c6a438ac2)
 
-Siirryin tarkastelemaan ilmoituksessa mainittua status-sivua, ja kuinka ollakaan, koko palvelu oli alhaalla:
+Siirryin tarkastelemaan ilmoituksessa mainittua status-sivua (https://letsencrypt.status.io/), ja kuinka ollakaan, koko palvelu oli alhaalla:
 
 ![image](https://github.com/user-attachments/assets/429b3e68-5aa2-4533-8ab4-76545d675235)
 
