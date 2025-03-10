@@ -109,6 +109,34 @@ Ja testasin nyt uudelleen komentoa:
 ![image](https://github.com/user-attachments/assets/3e1e6fe5-a8f1-4ad7-9c7d-c3fa3abb1d81)
 
 
+## d)
+
+Tässä osiossa lähden suorittamaan labraharjoitusta https://terokarvinen.com/2017/arvioitava-laboratorioharjoitus-linux-palvelimet-ict4tn021-3-uusi-ops-alkukevaalla-2017-p1/
+
+Lähdin aluksi luomaan tehtävänannon mukaisesti kotisivuja käyttäjille Jorma Mähkylä, Pekka Hurme, Ronaldo Smith, Håkan Petersson, Einari Mikkonen, Einari Vähäkäähkä, Eija Vähäkäähkä.
+
+Aluksi loin https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ ohjeiden mukaisesti uuden conf-tiedoston komennolla:
+
+    $ sudoedit /etc/apache2/sites-available/mahkyla.kurssikuru.com.conf
+
+Näin luotuun  tiedostoon kirjoitin 
+
+![image](https://github.com/user-attachments/assets/346af22d-9611-4307-92cc-e5b921628c72)
+
+Tämän jälkeen kopioin tämän tiedoston kaikille eri käyttäjille seuraavaa komentomallia käyttäen:
+
+    $ sudo cp mahkyla.kurssikuru.com.conf smith.kurssikuru.com.conf
+
+Tässä vaiheessa hyvän muistin aikana poistin aiemman sivun käytössä olevista sivuista komennolla (ja potkaisin demonia):
+
+    $ sudo a2dissite hattu.example.com.conf
+    $ sudo systemctl restart apache2
+
+Seuraavaksi siirryin muokkaamaan kaikkia conf-tiedostoja oikeaan muotoon. Jonka jälkeen potkaisin taas demonia. Seuraavaksi siirryin polkuun /home/tuomaske/publicsites/ luomaan jokaiselle sivulle oman kansion ja muokkaamaan niihin index.html tiedostot tehtävänannon mukaiseksi.
+
+![image](https://github.com/user-attachments/assets/e612070b-935d-4a44-b39f-d613196b4296)
+
+
 
 
 
