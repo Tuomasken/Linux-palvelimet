@@ -84,7 +84,7 @@ Seuraavaksi loin microlla java-tiedoston heimaailmajava.java, johon kirjoitin se
 
 ## c)
 
-Tässä harjoituksen osiossa lähdin luomaan shell-komentoa, jota kaikki käyttäjät voivat käyttää.
+Tässä harjoituksen osiossa lähdin luomaan shell-komentoa, jota kaikki käyttäjät voivat käyttää. 
 
 Aluksi loin sh-tiedoston:
 
@@ -115,7 +115,7 @@ Tässä osiossa lähden suorittamaan labraharjoitusta https://terokarvinen.com/2
 
 Lähdin aluksi luomaan tehtävänannon mukaisesti kotisivuja käyttäjille Jorma Mähkylä, Pekka Hurme, Ronaldo Smith, Håkan Petersson, Einari Mikkonen, Einari Vähäkäähkä, Eija Vähäkäähkä.
 
-Aluksi loin https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ ohjeiden mukaisesti uuden conf-tiedoston komennolla:
+Loin https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ ohjeiden mukaisesti uuden conf-tiedoston komennolla:
 
     $ sudoedit /etc/apache2/sites-available/mahkyla.kurssikuru.com.conf
 
@@ -132,20 +132,32 @@ Tässä vaiheessa hyvän muistin aikana poistin aiemman sivun käytössä olevis
     $ sudo a2dissite hattu.example.com.conf
     $ sudo systemctl restart apache2
 
-Seuraavaksi siirryin muokkaamaan kaikkia conf-tiedostoja oikeaan muotoon. Jonka jälkeen potkaisin taas demonia. Seuraavaksi siirryin polkuun /home/tuomaske/publicsites/ luomaan jokaiselle sivulle oman kansion ja muokkaamaan niihin index.html tiedostot tehtävänannon mukaiseksi.
+Seuraavaksi siirryin muokkaamaan kaikkia conf-tiedostoja oikeaan muotoon. Komennolla a2ensite lisäsin kaikki uudet sivut saatavilla olevien sivujen joukkoon. Jonka jälkeen potkaisin taas demonia. Seuraavaksi siirryin polkuun /home/tuomaske/publicsites/ luomaan jokaiselle sivulle oman kansion ja muokkaamaan niihin index.html tiedostot tehtävänannon mukaiseksi. 
 
 Tämän jälkeen simuloin nimipalvelua muokkaamalla /etc/hosts ja lisäämällä sinne tekemäni sivut:
 
 ![image](https://github.com/user-attachments/assets/e612070b-935d-4a44-b39f-d613196b4296)
 
-Tämän jälkeen aktivoin palomuurin ja tein siihen porttiin 80 reiän:
+Sitten aktivoin palomuurin ja tein siihen porttiin 80 reiän:
 
     $ sudo ufw enable
     $ sudo ufw allow 80/tcp
 
-Tämän jälkeen kokeilin kaikkia luotuja sivuja niiden osoitteella ja ne toimivat. Esimerkkinä Einari Vähäkäähkän sivu:
+Jonka jälkeen kokeilin kaikkia luotuja sivuja niiden osoitteella ja ne toimivat. Esimerkkinä Einari Vähäkäähkän sivu:
 
 ![image](https://github.com/user-attachments/assets/1ce3fc83-09cb-43f9-a9af-a3b162867a7e)
+
+
+## Lähteet
+
+1. https://terokarvinen.com/linux-palvelimet Lainattu 10.03.2025
+2. https://www.geeksforgeeks.org/how-to-install-python-on-linux/ Lainattu 10.03.2025
+3. https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/ Lainattu 10.03.2025
+4. https://terokarvinen.com/2017/arvioitava-laboratorioharjoitus-linux-palvelimet-ict4tn021-3-uusi-ops-alkukevaalla-2017-p1/ Lainattu 10.03.2025
+5. https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ Lainattu 10.03.2025
+
+
+
 
 
 
