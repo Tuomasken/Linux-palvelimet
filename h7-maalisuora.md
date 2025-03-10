@@ -70,7 +70,7 @@ Jonka asensin komennolla:
 
     $ sudo apt-get install openjdk-17-jdk
 
-Seuraavaksi loin microlla java-tiedoston heimaailmajava.java, johon kirjoitin seuraavan koodinpätkän ja sen jälkeen ajoin sen:
+Sitten loin microlla java-tiedoston heimaailmajava.java, johon kirjoitin seuraavan koodinpätkän ja sen jälkeen ajoin sen:
 
     public class heimaailmajava {
      public static void main(String[] args)
