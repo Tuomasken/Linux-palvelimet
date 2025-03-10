@@ -70,7 +70,7 @@ Jonka asensin komennolla:
 
     $ sudo apt-get install openjdk-17-jdk
 
-Seuraavaksi loin microlla java-tiedoston heimaailmajava.java, johon kirjoitin seuraavan koodinpätkän:
+Seuraavaksi loin microlla java-tiedoston heimaailmajava.java, johon kirjoitin seuraavan koodinpätkän ja sen jälkeen ajoin sen:
 
     public class heimaailmajava {
      public static void main(String[] args)
@@ -80,6 +80,35 @@ Seuraavaksi loin microlla java-tiedoston heimaailmajava.java, johon kirjoitin se
     }
 
 ![image](https://github.com/user-attachments/assets/b6eef5a8-d43e-4cdd-bf75-37bde4b0755b)
+
+
+## c)
+
+Tässä harjoituksen osiossa lähdin luomaan shell-komentoa, jota kaikki käyttäjät voivat käyttää.
+
+Aluksi loin sh-tiedoston:
+
+    $ micro testishelli.sh
+
+Ja kirjoitin sinne "date" ja "uptime" komennot. Testishelli.sh sisältö näytti lopulta tältä:
+
+![image](https://github.com/user-attachments/assets/2116291e-77ea-4c0e-8df0-c8cb1fbe8b59)
+
+Alun komento !#/usr/bin/bash kertoo ajettavalle shell-komennolle, mitä tulkkausohjelmaa sen lukemiseen käytetään. Luotuani komennon testasin sitä:
+
+![image](https://github.com/user-attachments/assets/8e3535cd-ec7e-4d18-ab84-17ac55323348)
+
+Tämän jälkeen lähdin muuttamaan sen käyttöoikeuksia, niin että kaikki käyttäjät voivat ajaa sen. Jonka jälkeen kopioin sen /usr/local/bin/ polkuun, jossa se on kaikkien käyttäjien saatavilla. Sen jälkeen poistin alkuperäisen shell-komennon polusta /home/tuomaske:
+
+        $ chmod ugo+x /home/tuomaske/testishelli.sh
+        $ sudo cp testishelli.sh /usr/local/bin/
+        $ rm testishelli.sh
+
+Ja testasin nyt uudelleen komentoa:
+
+![image](https://github.com/user-attachments/assets/3e1e6fe5-a8f1-4ad7-9c7d-c3fa3abb1d81)
+
+
 
 
 
