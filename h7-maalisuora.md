@@ -134,7 +134,19 @@ Tässä vaiheessa hyvän muistin aikana poistin aiemman sivun käytössä olevis
 
 Seuraavaksi siirryin muokkaamaan kaikkia conf-tiedostoja oikeaan muotoon. Jonka jälkeen potkaisin taas demonia. Seuraavaksi siirryin polkuun /home/tuomaske/publicsites/ luomaan jokaiselle sivulle oman kansion ja muokkaamaan niihin index.html tiedostot tehtävänannon mukaiseksi.
 
+Tämän jälkeen simuloin nimipalvelua muokkaamalla /etc/hosts ja lisäämällä sinne tekemäni sivut:
+
 ![image](https://github.com/user-attachments/assets/e612070b-935d-4a44-b39f-d613196b4296)
+
+Tämän jälkeen aktivoin palomuurin ja tein siihen porttiin 80 reiän:
+
+    $ sudo ufw enable
+    $ sudo ufw allow 80/tcp
+
+Tämän jälkeen kokeilin kaikkia luotuja sivuja niiden osoitteella ja ne toimivat. Esimerkkinä Einari Vähäkäähkän sivu:
+
+![image](https://github.com/user-attachments/assets/1ce3fc83-09cb-43f9-a9af-a3b162867a7e)
+
 
 
 
