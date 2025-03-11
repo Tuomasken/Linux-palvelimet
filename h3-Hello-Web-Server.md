@@ -94,8 +94,9 @@ Toisin kuin GET-pyyntö, HEAD-pyyntö (curl -I) pyytää palvelimelta vain kysei
 
 ## Lähteet
 
-1. https://httpd.apache.org/docs/2.4/vhosts/name-based.html lainattu 03.02.2025.
-2. https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address lainattu 03.02.2025.
+1. https://terokarvinen.com/linux-palvelimet/
+2. https://httpd.apache.org/docs/2.4/vhosts/name-based.html lainattu 03.02.2025.
+3. https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address lainattu 03.02.2025.
 
 
 
