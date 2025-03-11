@@ -36,4 +36,9 @@ Tämän jälkeen yritin uudelleen käynnistää virtuaalikoneen, joka onnistui t
 
  Testasin vielä perustoimintoja virtuaalikoneessa ja en kohdannut vajavaisuuksia.
 
+ ## Lähteet
+
+1. https://terokarvinen.com/linux-palvelimet
+2. https://terokarvinen.com/2021/install-debian-on-virtualbox/
+
 
