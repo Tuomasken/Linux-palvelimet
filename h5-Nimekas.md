@@ -159,9 +159,10 @@ Lisäksi tuloksista löytyy HTTPS-tietue, joka kertoo suojatusta yhteydestä kys
 
 ## Lähteet
 
-1. https://stackoverflow.com/questions/43318041/ah00035-access-to-denied-filesystem-path-users-xxx-documents-workspace-b Lainattu 4.3.2025
-2. https://www.geeksforgeeks.org/dig-command-in-linux-with-examples/ Lainattu 4.3.2025
-3. www.chatgpt.com Lainattu 4.3.2025
+1. https://terokarvinen.com/linux-palvelimet/
+2. https://stackoverflow.com/questions/43318041/ah00035-access-to-denied-filesystem-path-users-xxx-documents-workspace-b Lainattu 4.3.2025
+3. https://www.geeksforgeeks.org/dig-command-in-linux-with-examples/ Lainattu 4.3.2025
+4. www.chatgpt.com Lainattu 4.3.2025
 
 
 
